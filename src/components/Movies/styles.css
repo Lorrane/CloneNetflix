@@ -1,0 +1,31 @@
+.row {
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin: 0 0 0 30px; 
+}
+
+.movieArea {
+    overflow-x: hidden;
+}
+
+.movieList {
+    width: 999999px;
+}
+
+.movie {
+    display: inline-block;
+    width: 150px;
+    cursor: pointer;
+}
+
+.movie img {
+    width: 100%;
+    transform: scale(0.9);
+    transition: all ease 0.2s;
+}
+
+.movie img:hover {
+    transform: scale(1);
+}

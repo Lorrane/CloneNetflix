@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Tmdb from "./Tmdb";
 import Movie from "./components/Movies";
+import './App.css';
 
 function App() {
 
