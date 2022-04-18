@@ -14,10 +14,10 @@ Netflix Clone, using React and TMDB API, all rights Netflix and TMDB.
 - [ ] Header
 - - [ ] Netflix Logo
 - - [ ] User Icon
-- [ ] Spotlight movie
-- - [ ] Spotlight information
+- [x] Spotlight movie
+- - [x] Spotlight information
 - [x] Movie lists
-- - [ ] Movie Row
+- - [x] Movie Row
 - [ ] Footer
 
 ## Modelo 

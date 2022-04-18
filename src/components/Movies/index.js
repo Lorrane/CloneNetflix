@@ -2,6 +2,11 @@ import React from "react";
 import './styles.css';
 
 function Movie({ title, items }) {
+
+    // const lista = items.results.filter((movie) => {
+    //     return movie.original_language !== "ar";
+    // })
+    
     return (
         <div className="row">
             <h2>{title}</h2>
