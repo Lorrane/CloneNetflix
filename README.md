@@ -3,7 +3,7 @@
 </p-->
 <h1 align=center>Clone Netflix</h1>
 <p display=inline-block>
-  <img alt="Status: Working on" src="https://img.shields.io/badge/Status-Working%20on-orange" />
+  <img alt="Status: Done" src="https://img.shields.io/badge/Status-Done-Success" />
   <img align=right alt="React" src="https://img.shields.io/badge/React-4D4D4D?logo=React&style=for-the-badge&logoColor=blue" />
 </p>
 
@@ -11,14 +11,14 @@ Netflix Clone, using React and TMDB API, all rights Netflix and TMDB.
 
 ## Script
 
-- [ ] Header
-- - [ ] Netflix Logo
-- - [ ] User Icon
+- [x] Header
+- - [x] Netflix Logo
+- - [x] User Icon
 - [x] Spotlight movie
 - - [x] Spotlight information
 - [x] Movie lists
 - - [x] Movie Row
-- [ ] Footer
+- [x] Footer
 
 ## Modelo 
 If you like the project and want to see working, just click <a href="https://lorrane.github.io/RA">here</a>.

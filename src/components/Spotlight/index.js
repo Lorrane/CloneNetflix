@@ -3,10 +3,16 @@ import './styles.css';
 
 function Spotlight({ data }) {
 
+    
     var date = new Date(data.first_air_date);
     var genres = [];
     for (let i in data.genres) {
         genres.push(data.genres[i].name);
+    }
+
+    let description = data.overview;
+    if (description.length > 200) {
+        description = description.substring(0, 200)+' ...';
     }
 
     return (
@@ -23,9 +29,10 @@ function Spotlight({ data }) {
                         <div className="year">{date.getFullYear()}</div>
                         <div className="seasons">{data.number_of_seasons} temporada{data.number_of_seasons !== 1 ? 's' : ''}</div>
                     </div>
-                    <div className="description"> {data.overview} </div>
-                    <div className="button">
-
+                    <div className="description"> {description} </div>
+                    <div className="buttons">
+                        <a href={`/watch/${data.id}`} className="watch">▶ Assistir</a>
+                        <a href={`/list/add/${data.id}`} className="addList">+ Minha Lista</a>
                     </div>
                     <div className="genres">
                         <strong>Gêneros: </strong>{genres.join(', ')}

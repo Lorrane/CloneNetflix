@@ -1,5 +1,6 @@
 .row {
     margin-bottom: 30px;
+
 }
 
 h2 {
@@ -11,7 +12,7 @@ h2 {
 }
 
 .movieList {
-    width: 999999px;
+    transition: all ease 0.5s;
 }
 
 .movie {
@@ -28,4 +29,37 @@ h2 {
 
 .movie img:hover {
     transform: scale(1);
+}
+
+.left, .right {
+    position: absolute;
+    width: 40px;
+    height: 225px;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0;
+    transition: all ease 0.5s ;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.row:hover .left, .row:hover .right {
+    opacity: 1;
+}
+
+@media (max-width: 760px) {
+    .left, .right {
+        opacity: 1;
+    }
 }
